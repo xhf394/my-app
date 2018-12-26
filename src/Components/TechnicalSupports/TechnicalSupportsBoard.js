@@ -12,7 +12,7 @@ class TechnicalSupportsBoard extends React.Component {
              * 路径为对应i值获取
              * TechnicalSupportsSquare 单个主页标题方块
             */
-         	<Link key={i}  to={`${process.env.PUBLIC_URL}/technical-supports/${this.props.technicalSupportsSlides[i].id}`}>
+         	<Link key={i}  to={`/technical-supports/${this.props.technicalSupportsSlides[i].id}`}>
          	    <TechnicalSupportsSquare 
          	    key={i}
                 index={i}

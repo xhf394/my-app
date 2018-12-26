@@ -14,7 +14,7 @@ class NewsBoard extends React.Component {
     */
 	renderNewsSquare(i){
          return(
-         	<Link key={i} to={`${process.env.PUBLIC_URL}/news/${this.props.newsSlides[i].id}`}>
+         	<Link key={i} to={`/news/${this.props.newsSlides[i].id}`}>
          	    <NewsSquare
                  key={i}
                  index={i}

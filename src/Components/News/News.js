@@ -41,7 +41,7 @@ class News extends React.Component {
 			<div className="container">
         <div>
           <Switch>
-            <Route exact path = {`${process.env.PUBLIC_URL}/news`} render={({match}) => {
+            <Route exact path = "/news" render={({match}) => {
               return(
                 <NewsBoard 
                   newsSlides={this.state.newsSlides}
@@ -51,7 +51,7 @@ class News extends React.Component {
               )
             }}/>
                         
-            <Route path= {`${process.env.PUBLIC_URL}/news/:id`} render={({match}) => {
+            <Route path= "/news/:id" render={({match}) => {
               return(
                 <NewsContent
                   match={match} 

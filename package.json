@@ -2,7 +2,7 @@
   "name": "scdy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xhf394.github.io/scdy",
+  "homepage": "https://www.codeinboxes.com/build",
   "dependencies": {
     "axios": "^0.18.0",
     "core-js": "^3.0.0-beta.5",

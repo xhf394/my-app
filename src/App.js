@@ -105,7 +105,7 @@ class App extends React.Component {
        **Navigation 导航栏区域
        **main-page 主体部分
       **/
-    <Router basename="/scdy">
+    <Router basename="/build">
       <ScrollToTop>
       <div >
       <Greetings greeting={this.state.greeting}/>
@@ -116,7 +116,7 @@ class App extends React.Component {
              {routes.map((route, index) => (
                 <Route
                   key = {index}
-                  path={`${process.env.PUBLIC_URL}${route.path}`}
+                  path={route.path}
                   exact={route.exact}
                   component={route.main}
                 />

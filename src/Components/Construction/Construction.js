@@ -50,7 +50,7 @@ class Construction extends React.Component {
             <div className="container">
               <div className="construction-row-container">
                   <Switch >
-                      <Route exact path = {`${process.env.PUBLIC_URL}/construction`} render={({match}) => ( 
+                      <Route exact path = "/construction" render={({match}) => ( 
                           <Board
                               constructionSlides={this.state.constructionSlides}
                               squares={this.state.squares}
@@ -60,7 +60,7 @@ class Construction extends React.Component {
                           />
                       )}/>  
                       
-                      <Route  path={`${process.env.PUBLIC_URL}/construction/:id`} render={({match})=>(
+                      <Route  path="/construction/:id" render={({match})=>(
                           <SquareContent 
                               constructionSlides={this.state.constructionSlides}
                               constructionGallery ={this.state.constructionGallery}

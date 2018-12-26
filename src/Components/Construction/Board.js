@@ -13,7 +13,7 @@ class Board extends React.Component {
          **动态路由为匹配数组的对应id传入子组件，获取相关id信息并进行跳转 
         **/
 
-      	<Link style={{textDecoration: 'none'}} key={i} to={`${process.env.PUBLIC_URL}/construction/${this.props.constructionGallery[i].id}`} >
+      	<Link style={{textDecoration: 'none'}} key={i} to={`/construction/${this.props.constructionGallery[i].id}`} >
             <Square 
               key={i}
               index={i}

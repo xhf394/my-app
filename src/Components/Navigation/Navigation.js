@@ -42,35 +42,35 @@ class Navigation extends React.Component {
 		return (
 		<div className="container" >
           <div className ="nav-logo">              
-            <Link to={`${process.env.PUBLIC_URL}/`} style={{textDecoration: "none",height:'70px'}}><img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
+            <Link to="/" style={{textDecoration: "none",height:'70px'}}><img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
 `} alt="main logo"/></Link>
           </div>
 
           
 	            <ul className="nav-items"  style={{display:"flex", listStyleType: "none" }}>        
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/`} className="nav-item" >首页</Link>
+	                <Link to="/" className="nav-item" >首页</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/about-us`} className="nav-item">关于我们</Link>
+	                <Link to="/about-us" className="nav-item">关于我们</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/construction`} className="nav-item">地坪施工</Link>
+	                <Link to="/construction" className="nav-item">地坪施工</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/products`} className="nav-item">产品销售</Link>
+	                <Link to="/products" className="nav-item">产品销售</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/news`} className="nav-item">新闻中心</Link>
+	                <Link to="/news" className="nav-item">新闻中心</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/technical-supports`} className="nav-item">技术服务</Link>
+	                <Link to="/technical-supports" className="nav-item">技术服务</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/jobs`} className="nav-item">企业招聘</Link>
+	                <Link to="/jobs" className="nav-item">企业招聘</Link>
 	              </li>
 	              <li >
-	                <Link to={`${process.env.PUBLIC_URL}/contact-us`} className="nav-item">联系我们</Link>
+	                <Link to="contact-us" className="nav-item">联系我们</Link>
 	              </li>
 	            </ul>
           

@@ -42,7 +42,7 @@ class TechnicalSupports extends React.Component {
 		return(
 			<div className="container">
 				<Switch>
-				    <Route exact path = {`${process.env.PUBLIC_URL}/technical-supports`} render={({match}) => {
+				    <Route exact path = "/technical-supports" render={({match}) => {
                         return(
                             <TechnicalSupportsBoard 
                                 technicalSupportsSlides={this.state.technicalSupportsSlides}
@@ -52,7 +52,7 @@ class TechnicalSupports extends React.Component {
                         )
 				    }}/>
 
-				    <Route path={`${process.env.PUBLIC_URL}/technical-supports/:id`} render={({match}) => {
+				    <Route path="/technical-supports/:id" render={({match}) => {
 				    	return(
 				    		<TechnicalSupportsContent 
 				    		    match={match}
