@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+
+  /* Give app full page to work with */
+  height: 100vh;
+
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+.container {
+	width: 1000px;
+	margin:0 auto
+}
+
+/*@media (min-width: 1200px ) {
+	.container {
+		width: 1170px;
+	}
+}*/
+
+.container::before, .container::after {
+	content: '';
+	display: table;
+}
+

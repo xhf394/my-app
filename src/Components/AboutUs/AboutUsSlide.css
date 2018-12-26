@@ -1,0 +1,11 @@
+
+
+.aboutUsSlide {
+	
+  height: 250px;
+  width: 220px;
+  transition: background-image .3s ease-in-out;
+  margin:5px;
+	
+  
+}

@@ -1,0 +1,25 @@
+.aboutUs-introducation{
+	
+	/*width:700px;*/
+	margin-bottom: 50px;
+	/*margin: 30px 0 ;*/
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-indent: 25px;
+	line-height: 35px;
+}
+
+.text_bg{
+	background-color:rgba(248,248,248,1);
+	/*border-radius:10px;*/
+	padding:10px;
+	border:solid 1px #E8E8E8;
+
+	border-radius: 10px;
+	
+}
+
+.aboutUs-container{
+	display:flex;
+	justify-content:center;
+}

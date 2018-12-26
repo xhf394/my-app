@@ -1,0 +1,46 @@
+.aboutUsSlider {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  
+  margin: 0;
+  /*height: 300px;*/
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.aboutUsSlider-wrapper {
+/*  position: relative;*/
+  height: 100%;
+  width: 700px;
+  display: flex;
+  padding:10px;
+  margin:10px;
+  justify-content: space-between;
+}
+
+.aboutUs-rows {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.aboutus-nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 125px;
+  z-index: 999;
+  color: black;
+  cursor: pointer;
+}
+
+.aboutus-backArrow {
+	width:100px;
+	height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  z-index: 999;
+  color: black;
+  cursor: pointer;
+}

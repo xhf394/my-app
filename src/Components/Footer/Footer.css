@@ -1,0 +1,9 @@
+.footstyle{
+	display: flex;
+	color: #BEBEBE;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	height: 200px;
+	align-items: flex-end;
+}

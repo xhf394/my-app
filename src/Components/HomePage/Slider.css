@@ -1,0 +1,42 @@
+.slider {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  height: 350px; 
+  /*overflow: hidden;*/
+  /*white-space: nowrap;*/
+}
+
+.slider-wrapper {
+  /*position: relative;*/
+  height: 100%;
+  width: 100%;
+	background-size:100% 100%;
+}
+
+
+.slide {
+  height: 100%;
+  width: 100%;
+  transition: background-image .3s ease-in-out;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+}
+
+.backArrow {
+	width: 100px;
+	height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+}

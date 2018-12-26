@@ -1,0 +1,16 @@
+.technical-title{
+	
+	line-height: 40px;
+	height: 40px;
+	border-bottom:1px dashed black;
+	font-size: 18px;
+	text-shadow: 5px 5px 5px yellow;
+	font-style: italic;
+}
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+

@@ -1,0 +1,27 @@
+.container_2{
+	margin: 50px 0px;
+	padding:10px 20px 0 0;
+	/*border:1px dashed black;*/
+	
+/*background: rgba(243,243,243,1); /* Old browsers */
+
+	border:solid 1px #E8E8E8;
+	border-radius: 10px;
+	
+}
+.productsContent-imgs{
+	margin: 0 20px 0 10px;
+	
+}
+.contentimg{
+	width: 180px;
+	height: 180px;
+	margin-bottom:10px;
+	box-shadow:10px 10px 5px #888888;
+}
+.productsContent-text{
+	
+	width: 100%;
+}
+
+

@@ -1,0 +1,10 @@
+/*滚动图片样式*/
+.scrollDIV{
+	width: 1000px;
+	height:250px;
+}
+.scrollimg{
+	width: 100%;
+	height: 100%;
+	
+}

@@ -1,0 +1,13 @@
+.weixin{
+	margin:0 auto;
+	padding: 50px 10px 10px 10px;
+}
+.weixin-rows{
+	margin: 0 auto;
+	width: 340px;
+}
+.weixin-img{
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+}

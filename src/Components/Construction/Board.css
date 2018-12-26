@@ -1,0 +1,25 @@
+.construction-rows {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content:space-between;
+	margin:20px 0px;
+	
+}
+.renderSquare {
+	display: flex;
+	width: 450px;
+	height: 180px;
+
+}
+
+.squareHover {
+	background-color: red;
+}
+
+a.renderSquare:hover {
+	background-color: red;
+}
+
+
+
