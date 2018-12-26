@@ -105,7 +105,7 @@ class App extends React.Component {
        **Navigation 导航栏区域
        **main-page 主体部分
       **/
-    <Router basename="/dyne">
+    <Router basename="/scdy">
       <ScrollToTop>
       <div >
       <Greetings greeting={this.state.greeting}/>
