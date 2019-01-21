@@ -19,6 +19,7 @@ class NewsBoard extends React.Component {
                  key={i}
                  index={i}
                  newsSquare={this.props.newsSlides[i]}
+                 id={this.props.newsSlides[i].id}
          	    />
          	</Link>
          	)
@@ -33,7 +34,7 @@ class NewsBoard extends React.Component {
      * 包含每一个循环后的新闻链接方块
     */
 		return(
-      <div>
+      <div className="news-Page">
         {newsSquares 
           ?
           (<div>

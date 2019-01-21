@@ -5,7 +5,7 @@ const AboutUsSlide = (props) => {
     //获取当前图片的路径
     const url = props.aboutUsSlide.filepath;
     
-    console.log(`${url}`);
+    //console.log(`${url}`);
     //将路径存入变量，在循环中动态显示
 
 	const styles = {

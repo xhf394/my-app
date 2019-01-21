@@ -10,7 +10,8 @@ class TechnicalSupports extends React.Component {
 		super(props);
         this.state = {
         	technicalSupportsSlides: [],
-        	technicalSupportsSquares: []
+        	technicalSupportsSquares: [],
+            idArray: [],
         }
 	}
     
@@ -23,7 +24,10 @@ class TechnicalSupports extends React.Component {
                 	technicalSupportsSlides: response.data,
 
                 	//创建技术服务对应长度空白数组
-                	technicalSupportsSquares: Array(response.data.length).fill(null)
+                	technicalSupportsSquares: Array(response.data.length).fill(null),
+
+                    //创建技术服务内容序列号
+                    idArray: response.data.map(content => content.id)
                 })
           )
          .catch(function (error) {
@@ -39,6 +43,8 @@ class TechnicalSupports extends React.Component {
          * TechnicalSupportBoard 技术服务主页面
          * TechnicalSupportContent 技术服务内页
         */
+        //console.log(this.state.idArray);
+
 		return(
 			<div className="container">
 				<Switch>
@@ -56,6 +62,7 @@ class TechnicalSupports extends React.Component {
 				    	return(
 				    		<TechnicalSupportsContent 
 				    		    match={match}
+                                idArray={this.state.idArray}
 				    		/>
 				        )
 				    }}/>
@@ -66,3 +73,4 @@ class TechnicalSupports extends React.Component {
 }
 
 export default TechnicalSupports;
+

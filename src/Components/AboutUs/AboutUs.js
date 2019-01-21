@@ -73,7 +73,7 @@ class AboutUs extends React.Component {
         const shouldResetIndex = aboutUsCurrentIndex === lastIndex;
         const index = shouldResetIndex ? 0 : aboutUsCurrentIndex + 1
 
-        console.log(lastIndex);
+        //console.log(lastIndex);
          
         //更新完成后 更新页面路径
         this.setState({
@@ -93,7 +93,7 @@ class AboutUs extends React.Component {
 	                {this.state.aboutUsIntroduction
 	                	?
 	                	(
-				           <div className="aboutUs-introducation text_bg">
+				           <div className="aboutUs-introduction text_bg">
 				           {this.state.aboutUsIntroduction}</div>
 				        )
 	                	:

@@ -37,8 +37,9 @@ class TechnicalSupportsSquare extends React.Component {
         if(this.state.hover){
         	return(       	
         	<div
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                className="technicalSupportsContents"
         	>
 
         	
@@ -56,8 +57,9 @@ class TechnicalSupportsSquare extends React.Component {
         else {
         return(       	
         	<div
-            onMouseEnter={this.onMouseEnter}
-            onMouseLeave={this.onMouseLeave}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                className="technicalSupportsContents"
         	>
         	{ index ? 
         		(<div className="technical-title">

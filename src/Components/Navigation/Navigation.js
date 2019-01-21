@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navigation.css";
 
 
@@ -40,37 +40,35 @@ class Navigation extends React.Component {
     **/
 
 		return (
-		<div className="container" >
-          <div className ="nav-logo">              
-            <Link to="/" style={{textDecoration: "none",height:'70px'}}><img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
-`} alt="main logo"/></Link>
-          </div>
-
-          
+		<div className="container" >         
 	            <ul className="nav-items"  style={{display:"flex", listStyleType: "none" }}>        
-	              <li >
-	                <Link to="/" className="nav-item" >首页</Link>
+	              <li>
+                  <Link to="/" className ="nav-logo"><img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
+`} alt="main logo"/></Link> 
+                </li>
+                <li >
+	                <NavLink exact to="/" className="nav-item" activeStyle={{color: "red"}}>首页</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/about-us" className="nav-item">关于我们</Link>
+	                <NavLink to="/about-us" className="nav-item" activeStyle={{color: "red"}}>关于我们</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/construction" className="nav-item">地坪施工</Link>
+	                <NavLink to="/construction" className="nav-item" activeStyle={{color: "red"}}>地坪施工</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/products" className="nav-item">产品销售</Link>
+	                <NavLink to="/products" className="nav-item" activeStyle={{color: "red"}}>产品销售</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/news" className="nav-item">新闻中心</Link>
+	                <NavLink to="/news" className="nav-item" activeStyle={{color: "red"}}>新闻中心</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/technical-supports" className="nav-item">技术服务</Link>
+	                <NavLink to="/technical-supports" className="nav-item" activeStyle={{color: "red"}}>技术服务</NavLink>
 	              </li>
 	              <li >
-	                <Link to="/jobs" className="nav-item">企业招聘</Link>
+	                <NavLink to="/jobs" className="nav-item" activeStyle={{color: "red"}}>企业招聘</NavLink>
 	              </li>
 	              <li >
-	                <Link to="contact-us" className="nav-item">联系我们</Link>
+	                <NavLink to="/contact-us" className="nav-item" activeStyle={{color: "red"}}>联系我们</NavLink>
 	              </li>
 	            </ul>
           

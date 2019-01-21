@@ -1,13 +1,34 @@
 import React from 'react';
+import axios from 'axios';
 import './NewsSquare.css';
 
 
 class NewsSquare extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: undefined,
+        }
+    }
+    
+    async componentDidMount() {
+        const id = this.props.id;
 
+        axios.get(`https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
+         .then((response)  => 
+            this.setState({
+                text: response.data.text,
+            })
+          )
+         .catch(function (error) {
+          console.log(error)
+         })
+    }
 	render(){
 		//获取每一条新闻对应对象信息
 		const newsSlides = this.props.newsSquare;
 		//console.log(newsSlides);
+        //console.log(this.props.id);
 
 		//新闻标题页面图片获取
         const newsFileLevel = newsSlides.filelevel;
@@ -17,7 +38,12 @@ class NewsSquare extends React.Component {
         const url = newsSlides.filepath[newsFileIndex];       
         
         //获取新闻标题
-        const title = newsSlides.title;       
+        const title = newsSlides.title; 
+
+        /*获取新闻内容并初次转换HTML实体*/
+        const Entities = require('html-entities').XmlEntities;
+        const entities = new Entities();
+        const text = entities.decode(this.state.text);      
 
         return(
             /**
@@ -27,13 +53,15 @@ class NewsSquare extends React.Component {
             */
         	<div>
         		{title?
-        			(<div className="titles">
-        				<img className="title-pic" src={url} alt=""/>
+        			(<div className="titles">      				
         				<div className="news-title-text">
-                        	<div className="title-txt">{title}</div>
-                        	<div className="title-txt">这个是日期</div>
+                            {text
+                            ? 
+                            (<div dangerouslySetInnerHTML={{__html : text}}></div>)
+                            :
+                            (<div></div>)}
                         </div>
-                        
+                        <img className="title-pic" src={url} alt=""/>
         			</div>)
         			:(<div></div>)}
         	</div>)  

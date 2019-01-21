@@ -12,7 +12,7 @@ class aboutUsSlider extends React.Component {
         const currentAboutUsSquares = this.props.aboutUsSlides[this.props.aboutUsCurrentIndex];
         //获得当前方块对应所有信息
         const aboutUsSlide = currentAboutUsSquares[i];
-        console.log( currentAboutUsSquares);
+        //console.log( currentAboutUsSquares);
 
     	return(
         /**渲染图片数组

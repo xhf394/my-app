@@ -1,9 +1,9 @@
 .aboutUsSlider {
   position: relative;
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   
-  margin: 0;
+  margin-left: 210px;
   /*height: 300px;*/
   overflow: hidden;
   white-space: nowrap;
@@ -12,10 +12,10 @@
 .aboutUsSlider-wrapper {
 /*  position: relative;*/
   height: 100%;
-  width: 700px;
+  width: 668px;
   display: flex;
-  padding:10px;
-  margin:10px;
+  padding-left:20px;
+  padding-right: 30px;
   justify-content: space-between;
 }
 
@@ -28,7 +28,7 @@
 .aboutus-nextArrow {
   position: absolute;
   top: 50%;
-  right: 125px;
+  right: 136px;
   z-index: 999;
   color: black;
   cursor: pointer;
@@ -39,7 +39,7 @@
 	height: 100px;
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 0px;
   z-index: 999;
   color: black;
   cursor: pointer;

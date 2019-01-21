@@ -1,9 +1,11 @@
 .footstyle{
 	display: flex;
+    flex-direction: row;
 	color: #BEBEBE;
-	width: 1000px;
-	margin: 0 auto;
+	width: 850px;
+	margin-top: 50px;
 	text-align: center;
 	height: 200px;
-	align-items: flex-end;
+	align-items: center;
+	flex-wrap: nowrap;
 }

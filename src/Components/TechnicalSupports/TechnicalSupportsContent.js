@@ -8,7 +8,8 @@ class TechnicalSupportsContent extends React.Component {
 		this.state = {
 			contentId: undefined,
 			title: undefined,
-			text: undefined
+			text: undefined,
+            data:undefined
 		}
 
 	}
@@ -22,7 +23,8 @@ class TechnicalSupportsContent extends React.Component {
         	this.setState({
                 contentId: response.data.id,
                 title: response.data.title,
-                text: response.data.text
+                text: response.data.text,
+                data: response.data
         	}))
         .catch(function (error) {
           console.log(error)
@@ -39,17 +41,29 @@ class TechnicalSupportsContent extends React.Component {
         //定义title
         const title = this.state.title;
 
+        //获取对应内容的序列号
+
+        const id = Number(this.props.match.params.id);
+        const idArray = this.props.idArray.slice();
+        const index = TechnicalSupportsIndex(id, idArray);
+        //console.log(this.props.match.params.id);
+        //console.log(this.props.idArray);
+        //console.log(index);
+
+
 		return(
             /** 技术服务内页
              * span 标题 
              * div dangerously.... 内容
             */
+            
+
 			<div>
-                {title 
+                {title && index
                     ?
                     (<div className="technical-content">
             	        <span className="technical-content-title">
-            	            {title}
+            	            {index}、{title}
                         </span>
                         <div dangerouslySetInnerHTML={{__html : text}}></div>
                     </div>)
@@ -62,3 +76,18 @@ class TechnicalSupportsContent extends React.Component {
 }
 
 export default TechnicalSupportsContent;
+
+/**Get content index
+* @params1 number content number in system
+* @params2 array all contents numbers in a array
+* @return number as its index
+**/
+function TechnicalSupportsIndex(id, idArray) {
+    let index = undefined;
+    for( let j = 0; j < idArray.length; j++) {
+        if( id === idArray[j]) {
+            return index = j + 1;
+        }           
+    }
+    return index;
+}

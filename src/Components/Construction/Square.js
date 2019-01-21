@@ -51,13 +51,11 @@ class Square extends React.Component {
         //定义style，将图片路径作为变量
         const styles =  {
 		    backgroundImage: `url(${url})`,
-		    width: '485px',
-		    height: '150px',
+		    width: '524px',
+		    height: '130px',
 		    padding: '0px' ,
 		    backgroundRepeat:'no-repeat',
-		    backgroundSize:'100% 100%',
-		    boxShadow: '10px 10px 5px #888888',
-		    
+		    backgroundSize:'100% 100%',		    
 	}
 
         /**设置条件性CSS渲染
@@ -77,7 +75,7 @@ class Square extends React.Component {
                     {constructionSquare 
                         ? 
                         (<div 
-        	                style={{width: '495px', height: "150px", padding:"0px", position:"relative"}} >
+        	                style={{width: '524px', height: "130px", padding:"0px", position:"relative"}} >
                             <span className='squaretext'>
                                 {constructionSquare.title}
                             </span>

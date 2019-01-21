@@ -112,7 +112,7 @@ class App extends React.Component {
       <div id="App" style={{opacity: this.state.appContents, transition: 'opacity 2s', width: '100%'}} >
         <div >
           <Navigation />
-          <div className="main-page" style={{marginTop: '50px', width: '100%'}}>
+          <div className="main-page" style={{marginTop: '22px', width: '100%'}}>
              {routes.map((route, index) => (
                 <Route
                   key = {index}

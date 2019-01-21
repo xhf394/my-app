@@ -68,7 +68,7 @@ class Products extends React.Component {
 		          <span>联系人： {companyPeople}</span>
 		          <span>联系电话： {companyPhone}</span>
 		          <span>地址： {companyAddress}</span>  
-    			</div>
+    		</div>
         <div className="contactUs-code">
           {contactUsCodeSquares 
             ? 

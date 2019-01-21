@@ -5,6 +5,8 @@
 .weixin-rows{
 	margin: 0 auto;
 	width: 340px;
+	display: flex;
+	align-items: center;
 }
 .weixin-img{
 	padding: 10px;

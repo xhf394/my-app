@@ -10,7 +10,7 @@ class News extends React.Component {
 		super(props);
 		this.state = {
 			newsSlides: [],
-			newsSquares: []
+			newsSquares: [],
 		}
 	}
 
@@ -37,6 +37,8 @@ class News extends React.Component {
      * NewsBoard 新闻首页
      * NewsContent 新闻内页
     */ 
+    //console.log(this.state.newsSlides);
+
 		return(
 			<div className="container">
         <div>

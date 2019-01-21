@@ -62,7 +62,7 @@ class ProductContent extends React.Component {
             lineHeight:'40px',
             textIndent:'0px',
             color:'white',
-            boxShadow:'10px 10px 5px #888888',
+            paddingLeft: "5px"
         }
  
     	return (
