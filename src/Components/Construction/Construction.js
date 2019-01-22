@@ -20,7 +20,7 @@ class Construction extends React.Component {
     
     async componentDidMount(){
       //获取地坪施工数据
-      axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=construction-mix-A')
+      axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=construction-mix-B')
          .then((response)  => 
                 this.setState ({
                   //获取所有数据

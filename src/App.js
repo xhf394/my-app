@@ -58,13 +58,13 @@ class Greetings extends React.Component {
         transition: 'opacity 2s',
         margin: 'auto',
         position:'fixed',
-        width: '150px',
-        height: '100px',
+        width: '158.33333px',
+        height: '50px',
         top: 0, left: 0, bottom: 0, right: 0,
         textAlign:'center',
         }}>
         <img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
-`} alt="main logo" style={{width: '100%', height: '60%'}}/>
+`} alt="main logo" style={{width: '100%', height: '100%'}}/>
       </div>)
   }
 }

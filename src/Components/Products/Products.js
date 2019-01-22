@@ -16,7 +16,7 @@ class Products extends React.Component {
 
     async componentDidMount(){
         //获取产品id数组
-        axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticleidsbyclassificationwithget?classification=productsale-mix-A')
+        axios.get('https://www.codeinboxes.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=products')
          .then((response)  => 
                 this.setState({
                   //更新data值为所有产品id号
@@ -56,12 +56,12 @@ class Products extends React.Component {
 		<div className="container">
 			<div className="scrollDIV"> 
             	<img className="scrollimg" src={slideShow} alt=""/>
-        	</div>
-        
-	        <ProductsContents 
-	          data={this.state.data}
-	          productsSquares={this.state.productsSquares}
-	        /> 
+      </div>
+      <ProductsContents
+        data={this.state.data} 
+        productsSquares={this.state.productsSquares}
+      />  
+ 
   		</div>
 		)
 	}

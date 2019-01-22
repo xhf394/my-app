@@ -2,10 +2,15 @@
 	display: flex;
     flex-direction: row;
 	color: #BEBEBE;
-	width: 850px;
-	margin-top: 50px;
+	width: 1050px;
 	text-align: center;
-	height: 200px;
-	align-items: center;
+	height: 30px;
+	justify-content: flex-end;
+	align-items: flex-end;
 	flex-wrap: nowrap;
+	margin-bottom: 20px;
+}
+
+.footstyle img {
+	width: 156px;
 }

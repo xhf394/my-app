@@ -52,9 +52,9 @@ class SquareContent extends React.Component{
       const contentFilePathArray = contentFilePath(filelevel, filepath);
       
       //转换html实体
-      const Entities = require('html-entities').XmlEntities; 
-      const entities = new Entities();
-      const text = entities.decode(this.state.text);
+      //const Entities = require('html-entities').XmlEntities; 
+      //const entities = new Entities();
+      //const text = entities.decode(this.state.text);
 
 
     return (
@@ -67,12 +67,9 @@ class SquareContent extends React.Component{
       <div>
        	{this.state.data && this.state.filepath
           ?
-       		(<div>{this.state.text && filepath
+       		(<div>{filepath
             ? 
        			(<div className="construction-container">
-	                <div className="construction-content-description" dangerouslySetInnerHTML={{__html : text}}>
-	                
-	                </div>
 				    <div className="construction-imgs" >
 				      	{contentFilePathArray.map((filePath, fileIndex)=> {
 				      		return(

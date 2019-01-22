@@ -15,7 +15,7 @@ class ProductsContents extends React.Component {
     	return(
             <ProductsContent 
                 key={i}
-                id={this.props.data[i]}
+                url={this.props.data[i].filepath}
             />
     	)
     }
@@ -32,8 +32,9 @@ class ProductsContents extends React.Component {
         /**产品销售页面区域
          *根据ID数量进行循环渲染，根据id填入产品内容
          */
+
     	return (
-    		<div>
+    		<div className="productsContent-imgs">
                 {productsSquares 
                     ?
     			    (productsSquares.map((column, columnIndex) => {
