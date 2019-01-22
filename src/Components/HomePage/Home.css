@@ -1,12 +1,13 @@
 .weixin{
 	margin:0 auto;
-	padding: 50px 10px 10px 10px;
+	width:1050px;
+	padding: 9px 0px 10px 0px;
 }
 .weixin-rows{
 	margin: 0 auto;
-	width: 340px;
 	display: flex;
 	align-items: center;
+	width:170px;
 }
 .weixin-img{
 	padding: 10px;

@@ -1,12 +1,12 @@
 html,
 body {
   margin: 0;
-  font-family: 黑体, sans-serif;
+  font-family: 微软雅黑, sans-serif;
   color: #979595;
 }
 
 #App {
-  font-family: 黑体, sans-serif;
+  font-family: 微软雅黑, sans-serif;
 
   /* Give app full page to work with */
   height: 100vh;

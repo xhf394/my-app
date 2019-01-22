@@ -1,8 +1,7 @@
 import React from 'react';
 import AboutUsSlide from './AboutUsSlide';
 import './AboutUsSlider.css';
-import LeftArrow from './LeftArrow';
-import RightArrow from './RightArrow';
+
 
 class aboutUsSlider extends React.Component {
 
@@ -69,16 +68,6 @@ class aboutUsSlider extends React.Component {
                     : 
                     (<div></div>)}                                         
                 </div>
-                
-                <LeftArrow 
-                    goToPrevSlide={this.props.goToPrevSlide}
-                    aboutUsCurrentIndex={this.props.aboutUsCurrentIndex}
-                />
-                
-                <RightArrow 
-                    goToNextSlide={this.props.goToNextSlide}
-                    aboutUsCurrentIndex = {this.props.aboutUsCurrentIndex} 
-                />
         </div>
     	)
     }

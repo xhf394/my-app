@@ -3,7 +3,7 @@
   display:flex;
   justify-content: flex-start;
   
-  margin-left: 210px;
+  margin-left: 192px;
   /*height: 300px;*/
   overflow: hidden;
   white-space: nowrap;
@@ -12,10 +12,8 @@
 .aboutUsSlider-wrapper {
 /*  position: relative;*/
   height: 100%;
-  width: 668px;
+  width: 711px;
   display: flex;
-  padding-left:20px;
-  padding-right: 30px;
   justify-content: space-between;
 }
 

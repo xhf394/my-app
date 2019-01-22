@@ -3,8 +3,5 @@
 .aboutUsSlide {
   height: 250px;
   width: 215px;
-  transition: background-image .3s ease-in-out;
-  margin:5px;
-	
-  
+  transition: background-image .3s ease-in-out;  
 }

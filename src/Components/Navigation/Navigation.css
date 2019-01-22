@@ -22,6 +22,8 @@
 	width: 158.33333px;
 	height: 50px;
 	padding-right: 20px;
+	margin-left: -3px;
+	margin-bottom: 3px;
 }
 
 .nav-items{
@@ -32,12 +34,10 @@
 	justify-content:flex-start;
 	align-items: flex-end;
 	/*margin: 0;*/
-	font-size:19px;
+	font-size:18px;
 	/*border-bottom:1px solid #E8E8E8;*/
-	padding:3px;
+    padding:3px;
 	/*background-color:#E8E8E8;*/
-
-
 }
 
 .nav-item {
