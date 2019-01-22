@@ -28,8 +28,7 @@
 	width: 300px;
 	display: flex;
 	flex-direction:column;
-	justify-content:center;
-	margin-top: -40px;
+	justify-content:flex-start;
 }
 
 .news-title-text p {
@@ -39,4 +38,8 @@
 
 a:hover{
 	color:red;
+}
+
+a {
+	color: #979595;
 }
