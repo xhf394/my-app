@@ -38,7 +38,7 @@ class News extends React.Component {
      * NewsContent 新闻内页
     */ 
     //console.log(this.state.newsSlides);
-
+    console.log(this.state.newsSlides);
 		return(
 			<div className="container">
         <div>

@@ -44,7 +44,9 @@ class NewsSquare extends React.Component {
         const Entities = require('html-entities').XmlEntities;
         const entities = new Entities();
         const text = entities.decode(this.state.text);      
-
+        console.log( text );
+        console.log(this.state.text);
+        
         return(
             /**
              * 单个新闻区域
@@ -61,7 +63,9 @@ class NewsSquare extends React.Component {
                             :
                             (<div></div>)}
                         </div>
-                        <img className="title-pic" src={url} alt=""/>
+                        <div className="title-pic">
+                            <img src={url} alt=""/>
+                        </div>
         			</div>)
         			:(<div></div>)}
         	</div>)  

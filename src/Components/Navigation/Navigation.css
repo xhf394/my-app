@@ -27,9 +27,11 @@
 }
 
 .nav-items{
-	width:100%;
+	width:1050px;
 	height: 65px;
+	padding-left: 20px;
 	display:flex;
+	flex-wrap: nowrap;
 	justify-content:flex-start;
 	align-items: flex-end;
 	margin: 0;
