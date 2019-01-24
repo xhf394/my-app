@@ -16,10 +16,10 @@ class Products extends React.Component {
 
     async componentDidMount(){
         //获取公司相关信息
-        axios.get('https://www.codeinboxes.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=contectus-mix-A')
+        axios.get('https://www.codeinboxes.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=contactus')
          .then((response)  => 
                 this.setState({
-                   label: JSON.parse(response.data[0].label),
+                   label: response.data,
                 })
           )
          .catch(function (error) {
@@ -41,11 +41,11 @@ class Products extends React.Component {
 
 	render() {
       /*获取公司具体信息*/
-      const label = this.state.label;
-      const companyName = label['company_name'];
-      const companyPeople = label['company_people'];
-      const companyPhone = label['company_phone'];
-      const companyAddress = label['company_address'];
+      // const label = this.state.label;
+      // const companyName = label['company_name'];
+      // const companyPeople = label['company_people'];
+      // const companyPhone = label['company_phone'];
+      // const companyAddress = label['company_address'];
       //console.log(label);
       //console.log(companyName)
       
@@ -53,7 +53,7 @@ class Products extends React.Component {
       const contactUsCodeSquares = this.state.contactUsCodeSquares.slice();
       const contactUsCode = this.state.contactUsCode;
       //console.log(contactUsCode);
-
+      console.log(this.state.label);
 
 		return(
       /** 联系我们页面
@@ -64,10 +64,7 @@ class Products extends React.Component {
       */
 			<div className="container">
 			  <div className="contactUs-content" style={{display: 'flex', flexDirection: 'column'}}>
-		          <span>{companyName}</span>
-		          <span>联系人： {companyPeople}</span>
-		          <span>联系电话： {companyPhone}</span>
-		          <span>地址： {companyAddress}</span>  
+
     		</div>
         <div className="contactUs-code">
           {contactUsCodeSquares 

@@ -46,7 +46,7 @@ class NewsSquare extends React.Component {
         const text = entities.decode(this.state.text);      
         console.log( text );
         console.log(this.state.text);
-        
+
         return(
             /**
              * 单个新闻区域
