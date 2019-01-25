@@ -7,7 +7,7 @@ class Products extends React.Component {
 	constructor(props) {
 		super(props);
     this.state = {
-         label:[],
+         contactUs:undefined,
          contactUsCode: [],
          contactUsCodeSquares: []
     }
@@ -19,7 +19,7 @@ class Products extends React.Component {
         axios.get('https://www.codeinboxes.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=contactus')
          .then((response)  => 
                 this.setState({
-                   label: response.data,
+                   contactUs: response.data[0].label,
                 })
           )
          .catch(function (error) {
@@ -53,7 +53,11 @@ class Products extends React.Component {
       const contactUsCodeSquares = this.state.contactUsCodeSquares.slice();
       const contactUsCode = this.state.contactUsCode;
       //console.log(contactUsCode);
-      console.log(this.state.label);
+
+      //将html实体进行转换
+      const Entities = require('html-entities').XmlEntities;
+      const entities = new Entities();
+      const text = entities.decode(this.state.contactUs);  
 
 		return(
       /** 联系我们页面
@@ -64,8 +68,9 @@ class Products extends React.Component {
       */
 			<div className="container">
 			  <div className="contactUs-content" style={{display: 'flex', flexDirection: 'column'}}>
-
+          {text ? (<div dangerouslySetInnerHTML={{__html : text}}></div>) : (<div> </div>)}
     		</div>
+        
         <div className="contactUs-code">
           {contactUsCodeSquares 
             ? 

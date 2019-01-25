@@ -3,15 +3,27 @@
 	font-size: 16px;
 	font-family: "微软雅黑";
 	padding-left: 192px;
+	padding-right: 147px;
+	text-align: justify;
 }
+
+/*update html entities p style reset line space*/
+
+.contactUs-content p {
+	-webkit-margin-before: 0px;
+    margin-block-start: 0px;
+    -webkit-margin-after: 0px;
+    margin-block-end: 0px;
+}
+
 .contactUs-code {
-	margin-top:20px;
+	margin-top:10px;
 	padding-left: 192px;
 	
 }
+
 .contactUs-img {	
 	width: 150px;
 	height: 150px;
 	margin-right: 20px;
-	margin-top: 20px;
 }

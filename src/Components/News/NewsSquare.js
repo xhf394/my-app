@@ -44,8 +44,6 @@ class NewsSquare extends React.Component {
         const Entities = require('html-entities').XmlEntities;
         const entities = new Entities();
         const text = entities.decode(this.state.text);      
-        console.log( text );
-        console.log(this.state.text);
 
         return(
             /**
