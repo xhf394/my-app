@@ -17,14 +17,11 @@ class ProductContent extends React.Component {
              * img 单张图片
              * productsContent-text 文字区域 (标题div & 内容div)
              */
-    		<div className="container" style={{display: 'flex'}}>
-                <div style={{display: "flex", flexDirection: "column"}}>
+    		<div>
                     {filePath?
                         <img className="contentimg" src={filePath} alt=""/>
                         :
                         (<div></div>)}
-
-                </div> 
             </div>
 
     		)

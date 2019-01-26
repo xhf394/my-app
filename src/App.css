@@ -36,3 +36,6 @@ body {
 	display: table;
 }
 
+p {
+ margin: 0px;
+}
