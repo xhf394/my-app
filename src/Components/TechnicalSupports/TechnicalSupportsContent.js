@@ -18,7 +18,7 @@ class TechnicalSupportsContent extends React.Component {
         const id = this.props.match.params.id;
         
         //获取title & content & id
-		axios.get(`https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
+		axios.get(`https://www.dyn-e.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
         .then(response=>
         	this.setState({
                 contentId: response.data.id,

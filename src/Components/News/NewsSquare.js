@@ -14,7 +14,7 @@ class NewsSquare extends React.Component {
     async componentDidMount() {
         const id = this.props.id;
 
-        axios.get(`https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
+        axios.get(`https://www.dyn-e.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
          .then((response)  => 
             this.setState({
                 text: response.data.text,

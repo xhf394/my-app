@@ -63,7 +63,7 @@ class Greetings extends React.Component {
         top: 0, left: 0, bottom: 0, right: 0,
         textAlign:'center',
         }}>
-        <img src={`https://www.codeinboxes.com/dyne/public/static/images/logo/logo.jpg
+        <img src={`https://www.dyn-e.com/dyne/public/static/images/logo/logo.jpg
 `} alt="main logo" style={{width: '100%', height: '100%'}}/>
       </div>)
   }
@@ -105,7 +105,7 @@ class App extends React.Component {
        **Navigation 导航栏区域
        **main-page 主体部分
       **/
-    <Router basename="/build">
+    <Router>
       <ScrollToTop>
       <div >
       <Greetings greeting={this.state.greeting}/>

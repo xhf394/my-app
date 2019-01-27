@@ -95,7 +95,9 @@ class Square extends React.Component {
                     {constructionSquare 
                         ? 
                         (<div style={styles} >
-                     	
+                            <span className="squaretext_nohover">
+                                {constructionSquare.title}
+                            </span>
                         </div>)
                         : 
                         (<div></div>)

@@ -24,7 +24,7 @@ class SquareContent extends React.Component{
     	const id = this.props.match.params.id;
       
       //以id为变量获取对应地坪内页信息
-      axios.get(`https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
+      axios.get(`https://www.dyn-e.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
       .then(response=>
         this.setState ({
         	data: response.data,

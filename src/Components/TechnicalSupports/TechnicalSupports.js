@@ -17,7 +17,7 @@ class TechnicalSupports extends React.Component {
     
 	async componentDidMount() {
 
-		axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=technicalservice-mix-A')
+		axios.get('https://www.dyn-e.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=technicalservice-mix-A')
          .then((response)  => 
                 this.setState({
                 	//获取技术服务数据数组

@@ -23,7 +23,7 @@ class Home extends React.Component {
     componentDidMount(){
       
       /*获取主页图片*/     
-      axios.get(`https://www.codeinboxes.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=index-pic-A`)
+      axios.get(`https://www.dyn-e.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=index-pic-A`)
         .then(response =>
           //更新主页图片路径数组
           this.setState({
@@ -35,7 +35,7 @@ class Home extends React.Component {
       
 
       /*获取主页二维码*/
-      axios.get(`https://www.codeinboxes.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=index-pic-B`)
+      axios.get(`https://www.dyn-e.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=index-pic-B`)
         .then(response =>
           this.setState({
             //更新主页二维码数组

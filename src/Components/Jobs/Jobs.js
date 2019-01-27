@@ -15,7 +15,7 @@ class Jobs extends React.Component {
 
 	async componentDidMount() {
     //获取对应照片信息 & 给定对应个数的空白填充数组
-		axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=recruitment-mix-A')
+		axios.get('https://www.dyn-e.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=recruitment-mix-A')
          .then((response)  => 
                 this.setState({
                   data: response.data,

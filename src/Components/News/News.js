@@ -16,7 +16,7 @@ class News extends React.Component {
 
 	async componentDidMount() {
     //获取新闻信息列表及对应信息长度的填充空白
-		axios.get('https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=newscenter-mix-A')
+		axios.get('https://www.dyn-e.com/dyne/index.php/api/articlemanager/getabstractsbyclassificationwithget?classification=newscenter-mix-A')
          .then((response)  => 
             this.setState({
               newsSlides: response.data,

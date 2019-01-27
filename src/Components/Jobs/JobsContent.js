@@ -16,7 +16,7 @@ class ProductContent extends React.Component {
         const id= this.props.jobsContent.id;
         
         //获取对应id值的title & text
-        axios.get(`https://www.codeinboxes.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
+        axios.get(`https://www.dyn-e.com/dyne/index.php/api/articlemanager/getarticlebyidwithget?id=${id}`)
          .then((response)  => 
                 this.setState({
                     title: response.data.title,

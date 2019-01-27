@@ -26,7 +26,7 @@ class AboutUs extends React.Component {
 
 	async componentDidMount(){
         /*获取关于我们页面图片信息*/
-		axios.get(`https://www.codeinboxes.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=aboutus-pic-A`)
+		axios.get(`https://www.dyn-e.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=aboutus-pic-A`)
         .then(response =>
 		this.setState({
             /*将所有图片信息存入*/
@@ -40,7 +40,7 @@ class AboutUs extends React.Component {
             console.log(error)
         })
 
-      axios.get(`https://www.codeinboxes.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=aboutus-txt-A`)
+      axios.get(`https://www.dyn-e.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=aboutus-txt-A`)
         .then(response =>
         this.setState({
             aboutUsIntroduction: response.data[0].label,

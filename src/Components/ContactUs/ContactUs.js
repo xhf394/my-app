@@ -16,7 +16,7 @@ class Products extends React.Component {
 
     async componentDidMount(){
         //获取公司相关信息
-        axios.get('https://www.codeinboxes.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=contactus')
+        axios.get('https://www.dyn-e.com/dyne/index.php/api/labelmanager/getlabelsbylocationwithget?location=contactus')
          .then((response)  => 
                 this.setState({
                    contactUs: response.data[0].label,
@@ -27,7 +27,7 @@ class Products extends React.Component {
          })
         
         //获取公司二维码 & 生成对应数目空白数组
-        axios.get('https://www.codeinboxes.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=contectus-pic-A')
+        axios.get('https://www.dyn-e.com/dyne/index.php/api/imagesmanager/showimagesbylocationwithget?location=contectus-pic-A')
          .then((response)  => 
                this.setState({
                  contactUsCode: response.data,
