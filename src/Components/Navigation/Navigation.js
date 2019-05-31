@@ -40,7 +40,7 @@ class Navigation extends React.Component {
     **/
 
 		return (
-		<div className="container" style={{height: "133px"}} >         
+		<div className="container" style={{height: "107px"}} >         
 	            <ul className="nav-items"  style={{listStyleType: "none" }}>        
 	              <li>
                   <Link to="/" className ="nav-logo"><img src={`https://www.dyn-e.com/dyne/public/static/images/logo/logo.jpg
