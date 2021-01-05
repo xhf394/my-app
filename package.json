@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://www.dyn-e.com/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "core-js": "^3.0.0-beta.5",
     "gh-pages": "^2.0.1",
     "html-entities": "^1.2.1",
